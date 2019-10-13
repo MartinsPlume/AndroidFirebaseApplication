@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/loginTitleTextview"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:text="@string/loginTitle"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/loginPicture"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/loginTitleTextview"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/loginpicture" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/titleJuliFit"
+        android:textSize="30dp"
+        android:layout_above="@id/userIdLogin"
+        />
+
+
+    <EditText
+        android:id="@+id/userIdLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:hint="@string/enterId"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/userIdPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userIdLogin"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:hint="@string/enterPassword"
+        android:inputType="textWebPassword" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userIdPassword"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/pierakstities" />
+
+    <Button
+        android:id="@+id/registrationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registracija"
+        android:layout_below="@+id/userIdPassword"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentLeft="true"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/loginButton"
+        android:weightSum="10"
+        tools:context="com.example.pager.MainActivity" >
+
+        <TextView
+            android:id="@+id/rememberMeTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/atceretiesMani" />
+
+        <CheckBox
+            android:id="@+id/rememberMeCheckbox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="8" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">JuliFit</string>
+    <string name="titleJuliFit">Juli Fit</string>
+    <string name="vingrojumi">Vingrojumi</string>
+    <string name="trenini">Treniņi</string>
+    <string name="title_activity_excercise">ExcerciseActivity</string>
+    <string name="titleExcerciseActivity">Vingrojumi</string>
+    <string name="kajuVingrojumi">Kāju Vingrojumi</string>
+    <string name="loginTitle">Autentifikācija</string>
+    <string name="registerTitle">Reģistrācija</string>
+    <string name="userIdText">Lietotājs</string>
+    <string name="passwordText">Parole</string>
+    <string name="enterId">Ievadiet Jūsu ID</string>
+    <string name="enterPassword">Ievadiet Jūsu paroli</string>
+    <string name="pierakstities">Pierakstīties</string>
+    <string name="registracija">Reģistrēties</string>
+    <string name="reenterPassword">Ievadiet paroli atkārtoti</string>
+    <string name="atpakal">Atpakaļ</string>
+    <string name="atceretiesMani">Atcerēties mani</string>
+    <string name="izrakstities">Izrakstīties</string>
+    <string name="legExcercises">Kāju muskuļu</string>
+    <string name="backExcercises">Muguras muskuļu</string>
+    <string name="chestExcercises">Krūšu muskuļu</string>
+    <string name="shoulderExcercise">Plecu muskuļi</string>
+    <string name="armsExcercise">Roku muskuļi</string>
+    <string name="homeScreen">Sākums</string>
+    <string name="titleTraining">Treniņi</string>
+    <string name="intenseWorkoutText">Augstas intensitātes</string>
+    <string name="strengthText">Spēku attīstošie</string>
+    <string name="enduranceText">Izturības attīstošais</string>
+</resources>

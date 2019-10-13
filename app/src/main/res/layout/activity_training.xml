@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/excerciseTitleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/titleTraining"
+        android:textAlignment="center"
+        android:textSize="36sp" />
+
+    <ImageView
+        android:id="@+id/intenseworkoutimage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/excerciseTitleText"
+        android:layout_alignEnd="@+id/intenseButton"
+        android:layout_alignRight="@+id/intenseButton"
+        android:layout_marginEnd="180dp"
+        android:layout_marginRight="180dp"
+        app:srcCompat="@drawable/intenseworkout" />
+
+    <Button
+        android:id="@+id/intenseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_below="@id/excerciseTitleText"
+        android:layout_alignParentRight="true"
+        android:text="@string/intenseWorkoutText"/>
+
+    <ImageView
+        android:id="@+id/strengthTrainingImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/intenseworkoutimage"
+        android:layout_alignEnd="@+id/strengthButton"
+        android:layout_alignRight="@+id/strengthButton"
+        android:layout_marginEnd="180dp"
+        android:layout_marginRight="180dp"
+        app:srcCompat="@drawable/strengthtrainingimage" />
+
+    <Button
+        android:id="@+id/strengthButton"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_below="@id/intenseButton"
+        android:layout_alignParentRight="true"
+        android:text="@string/strengthText"/>
+
+    <ImageView
+        android:id="@+id/enduranceTrainingImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/strengthTrainingImage"
+        android:layout_alignEnd="@+id/enduranceButton"
+        android:layout_alignRight="@+id/enduranceButton"
+        android:layout_marginEnd="180dp"
+        android:layout_marginRight="180dp"
+        app:srcCompat="@drawable/edurancetrainingimage" />
+
+    <Button
+        android:id="@+id/enduranceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_below="@id/strengthButton"
+        android:layout_alignParentRight="true"
+        android:text="@string/enduranceText"/>
+
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/homeScreen" />
+
+</RelativeLayout>
