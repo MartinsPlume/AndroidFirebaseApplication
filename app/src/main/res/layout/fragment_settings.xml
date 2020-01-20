@@ -10,39 +10,40 @@
     >
 
     <TextView
-        android:id="@+id/loginTitleTextview"
+        android:id="@+id/settingsTitle"
         style="@style/Widget.AppCompat.TextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:text="@string/loginTitle"
+        android:text="@string/title_userSettings"
         android:textAlignment="center"
-        android:textSize="30sp" />
+        android:textSize="24sp" />
 
-    <ImageView
-        android:id="@+id/loginPicture"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_below="@+id/loginTitleTextview"
-        android:layout_centerHorizontal="true"
-        android:contentDescription="@string/LoginPictureDescription"
-        android:scaleType="fitStart"
-        app:srcCompat="@drawable/julifitdefaultlogo" />
 
+    <EditText
+        android:id="@+id/userName"
+        android:layout_below="@id/settingsTitle"
+        style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/yourName"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="28sp" />
 
     <EditText
         android:id="@+id/userIdLogin"
         style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/loginPicture"
+        android:layout_below="@id/settingsTitle"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp"
         android:autofillHints=""
         android:hint="@string/enterId"
         android:inputType="text"
         android:textAlignment="center"
-        android:textSize="30sp" />
+        android:textSize="28sp"
+        android:visibility="invisible" />
 
     <EditText
         android:id="@+id/userIdPassword"
@@ -51,50 +52,69 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/userIdLogin"
         android:layout_centerHorizontal="true"
-        android:autofillHints=""
-        android:hint="@string/enterPassword"
+        android:hint="@string/enterCurrentPassword"
         android:inputType="textWebPassword"
         android:textAlignment="center"
-        android:textSize="30sp" />
+        android:textSize="28sp"
+        android:visibility="invisible" />
 
-    <Button
-        android:id="@+id/loginButton"
-        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+    <EditText
+        android:id="@+id/userNewPassword"
+        style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/userIdPassword"
+        android:layout_above="@id/userNewPassword2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-        android:background="@color/colorPrimary"
-        android:text="@string/Sign_in" />
+        android:autofillHints="@string/enterNewPassword"
+        android:hint="@string/enterNewPassword"
+        android:inputType="textWebPassword"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/userNewPassword2"
+        style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttonSave"
+        android:layout_centerHorizontal="true"
+        android:autofillHints="@string/repeatNewPassword"
+        android:hint="@string/repeatNewPassword"
+        android:inputType="textWebPassword"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:visibility="invisible" />
 
     <Button
-        android:id="@+id/registrationButton"
-        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/buttonSave"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
         android:background="@color/colorPrimary"
-        android:text="@string/Registration" />
+        android:text="@string/SaveChanges" />
+
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/loginButton"
+        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:weightSum="10"
         tools:context="com.example.pager.MainActivity">
 
         <TextView
-            android:id="@+id/rememberMeTextView"
+            android:id="@+id/changePasswordTextView"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="2"
-            android:text="@string/rememberMe" />
+            android:text="@string/ChangePassword" />
 
         <CheckBox
-            android:id="@+id/rememberMeCheckbox"
+            android:id="@+id/changePasswordCheckbox"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="8" />

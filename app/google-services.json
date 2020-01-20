@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "407474908609",
+    "firebase_url": "https://julifit.firebaseio.com",
+    "project_id": "julifit",
+    "storage_bucket": "julifit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407474908609:android:e9ad02ac93b62877119340",
+        "android_client_info": {
+          "package_name": "com.mplu.julifit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "407474908609-mb0glqs9ubs61did7ja7ii1g24jvavom.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mplu.julifit",
+            "certificate_hash": "9d7cd68ef0609ceb0f8d2efb0cb9f624a4efcee8"
+          }
+        },
+        {
+          "client_id": "407474908609-1eckjh0vna9umjoapl1c3884ke2gol2u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBf5DUKP3jzED-8QeZffGtJq5mkNfQBa_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "407474908609-1eckjh0vna9umjoapl1c3884ke2gol2u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

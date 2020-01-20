@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.julifit">
+    package="com.mplu.julifit">
 
     <application
         android:allowBackup="true"
@@ -9,11 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TrainingActivity"></activity>
-        <activity android:name=".ExcerciseList" />
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".Register" />
-        <activity android:name=".ExcerciseActivity" />
+        <activity android:name=".ViewExerciseActivity"></activity>
+        <activity
+            android:name=".ExerciseActivity"
+            android:label="@string/title_activity_exercise"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".NavigationActivity" />
+        <activity android:name=".SignUpActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
