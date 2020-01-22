@@ -1,8 +1,19 @@
-# AndroidFirebaseApplication
-Android application that can access Firebase data
+### AndroidFirebaseApplication
 
-Android application was built for a project, that includes:
-React program in order to create and edit content that is based on Firebase
-Android application is for displaying this data
+Android application to display data from Firebase
 
-This is school project
+Android application designed to use Firebase services:
+- Authentication
+- Firestore
+- Storage
+
+This is part of the project with React program:
+https://github.com/MartinsPlume/FirebaseControl-WebApplication
+
+Project is for "Project of the year" for studies as a system for a personal trainer.
+
+AndroidFirebaseApplication allows for application users to access data from Firestore
+
+**MPLU**
+
+The project was created in Android Studio
